@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * SalesByMatch Tester.
  *
- * @author <Authors name>
+ * @author OnurSevDev
  * @version 1.0
  * @since <pre>Eyl 16, 2021</pre>
  */
@@ -34,11 +34,13 @@ public class SalesByMatchTest {
     @Test
     public void SalesByMatch_GetSocksCount() {
 
-   /*     List<Integer> socksArray = Arrays.asList(1,2,3);
+        List<Integer> singleSocksArray = Arrays.asList(10, 20, 20, 10, 10, 30, 50, 10, 20);
+        int singleSocksCount = 9;
 
-        salesByMatch.getSocksCount();*/
 
-        Assert.assertNull(null);
+        int result=salesByMatch.getSocksPairCount(singleSocksCount,singleSocksArray);
+
+        Assert.assertEquals(result,3);
     }
 
 } 
